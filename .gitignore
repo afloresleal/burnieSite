@@ -35,3 +35,6 @@ Temporary Items
 # Environment files
 .env
 .env.local
+
+# Changelog compartido entre Claude Code y Codex (contexto local, no para git)
+changelog.md

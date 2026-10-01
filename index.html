@@ -13,17 +13,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BURNIE - Personal Menace</title>
-  <meta name="description" content="BURNIE tracks your workouts, counts your streaks, and roasts you when your effort is embarrassing.">
+  <meta name="description" content="BURNIE tracks your workouts, calculates calories, syncs with Apple Health, and roasts you when your effort is embarrassing.">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="container nav">
-      <div class="logo" aria-label="BURNIE"><span class="brand">BURNIE</span></div>
+      <div class="logo" aria-label="BURNIE">BURNIE</div>
       <div class="nav-actions">
         <a href="#features" class="nav-link">Features</a>
         <a href="privacy.html" class="nav-link">Privacy</a>
@@ -42,7 +42,7 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="brand">BURNIE</span> is not your coach.</p>
           <h1>Your personal menace.</h1>
-          <p class="subhead"><span class="brand">BURNIE</span> tracks your workouts, counts your streaks, and roasts you when your effort is embarrassing.</p>
+          <p class="subhead"><span class="brand">BURNIE</span> tracks your workouts, calculates calories, syncs with Apple Health, and roasts you when your effort is embarrassing.</p>
           <div class="cta-group">
             <a class="btn primary" href="https://apps.apple.com/us/app/burnie/id6758413509" target="_blank">Download BURNIE</a>
             <!-- <p class="microcopy">Currently in review. <span class="brand">BURNIE</span> is sharpening its insults.</p>-->
@@ -61,96 +61,94 @@
     <section id="features" class="features">
       <div class="container">
 
-
-       <div class="feature-row">
+        <div class="feature-row">
           <div class="feature-media">
-            <img src="assets/home_counter.png" alt="Effort logging screen" loading="lazy">
+            <img src="assets/home_counter.png" alt="Home screen with stats" loading="lazy">
           </div>
           <div class="feature-copy">
-            <h2>Your consistency, graded monthly. Active days. Missed days. No excuses.</h2>
-          </div>
-        </div>
-
-
-        <div class="feature-row reverse">
-          <div class="feature-media">
-            <img src="assets/hall.png" alt="Streak tracking screen" loading="lazy">
-          </div>
-          <div class="feature-copy">
-            <h2>Brutally honest streaks</h2>
-            <p>Miss a day? <span class="brand">BURNIE</span> notices. Miss many? <span class="brand">BURNIE</span> remembers.</p>
-          </div>
-        </div>
-
-       <!-- <div class="feature-row reverse">
-          <div class="feature-media">
-            <img src="assets/screen-calendar.png" alt="Calendar grading screen" loading="lazy">
-          </div>
-          <div class="feature-copy">
-            <h2>Visual calendar of shame</h2>
-            <p>A monthly grade for your effort. It’s rarely kind.</p>
-          </div>
-        </div>-->
-
-        <div class="feature-row ">
-          <div class="feature-media">
-            <img src="assets/effort.png" alt="Effort logging screen" loading="lazy">
-          </div>
-          <div class="feature-copy">
-            <h2>Effort logging (not workouts)</h2>
-            <p>No programs. No routines. Just log what you did.</p>
+            <h2>Weekly goals that actually matter</h2>
+            <p>Set active days per week (3-7). <span class="brand">BURNIE</span> tracks your progress and judges accordingly. Hit your goal or face the consequences.</p>
           </div>
         </div>
 
         <div class="feature-row reverse">
           <div class="feature-media">
-            <img src="assets/reminder.png" alt="Daily reminder screen" loading="lazy">
+            <img src="assets/effort.png" alt="Calorie tracking screen" loading="lazy">
           </div>
           <div class="feature-copy">
-            <h2>Daily nagging</h2>
-            <p>Choose when <span class="brand">BURNIE</span> reminds you you’ve done nothing today.</p>
+            <h2>Automatic calorie tracking</h2>
+            <p>Every workout calculates calories burned. No manual input. <span class="brand">BURNIE</span> does the math so you can't lie about your effort.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-media">
+            <img src="assets/hall.png" alt="Settings and reminders screen" loading="lazy">
+          </div>
+          <div class="feature-copy">
+            <h2>Daily reminders + Apple Health sync</h2>
+            <p>Set custom workout reminders by day and time. Workouts from your Apple Watch? Imported. Steps from your iPhone? Counted. Everything synced, everything tracked.</p>
+          </div>
+        </div>
+
+        <div class="feature-row reverse">
+          <div class="feature-media">
+            <img src="assets/calendar-grade.png" alt="Monthly calendar grading" loading="lazy">
+          </div>
+          <div class="feature-copy">
+            <h2>Monthly grading system</h2>
+            <p>Your consistency gets a grade: A+ to F. Based on weekly goal completion. <span class="brand">BURNIE</span> remembers every lazy week.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-media">
+            <img src="assets/pick.png" alt="Custom emoji picker" loading="lazy">
+          </div>
+          <div class="feature-copy">
+            <h2>Custom icons for your workouts</h2>
+            <p>Pick your own emoji for custom activities. Make it yours. <span class="brand">BURNIE</span> doesn't care what icon you choose—just that you actually worked out.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="stats">
-      <div class="container">
-        <p class="stats-label">This is what <span class="brand">BURNIE</span> sees.</p>
-        <!-- Wide evidence card reinforces the “scorekeeping” tone. -->
-        <div class="stats-card">
-          <div class="stat">
-            <p class="stat-title">ACTIVE DAYS</p>
-            <p class="stat-value">0</p>
-          </div>
-          <div class="stat">
-            <p class="stat-title">MISSED DAYS</p>
-            <p class="stat-value">31</p>
-          </div>
-          <div class="stat">
-            <p class="stat-title">BURN GRADE</p>
-            <p class="stat-value">F</p>
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
     <section class="filter">
       <div class="container">
-        <h2>This app is not for everyone.</h2>
         <div class="filter-grid">
           <img src="assets/avatar.png" alt="Judgment avatar" class="filter-avatar" loading="lazy">
           <div class="filter-copy">
-            <ul>
-              <li>Need accountability, not inspiration</li>
-              <li>Laugh at getting called out</li>
-              <li>Are done lying to themselves</li>
-            </ul>
-            <p class="filter-end">If you want encouragement, download something nicer.</p>
+            <h2>Ready to be judged?</h2>
+          <p class="filter-micro">No subscriptions. No ads. Just judgment.</p>
+          <a class="btn primary" href="https://apps.apple.com/us/app/burnie/id6758413509" target="_blank">Download BURNIE</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!--
+     <section class="stats">
+      <div class="container">
+        <p class="stats-label">This is what BURNIE sees.</p>
+        <div class="stats-card">
+          <div class="stat">
+            <p class="stat-title">WEEKLY GOAL</p>
+            <p class="stat-value">0/3</p>
+          </div>
+          <div class="stat">
+            <p class="stat-title">CALORIES BURNED</p>
+            <p class="stat-value">0</p>
+          </div>
+          <div class="stat">
+            <p class="stat-title">STEPS TODAY</p>
+            <p class="stat-value">—</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
 
     <section id="cta" class="cta">
       <div class="container cta-inner">
@@ -158,9 +156,10 @@
           <h2>Ready to be judged?</h2>
           <p class="cta-micro">No subscriptions. No ads. Just judgment.</p>
         </div>
-        <a class="btn primary" href="https://apps.apple.com/us/app/burnie/id6758413509" target="_blank">Donload BURNIE</a>
+        <a class="btn primary" href="https://apps.apple.com/us/app/burnie/id6758413509" target="_blank">Download BURNIE</a>
       </div>
     </section>
+     -->
   </main>
 
   <footer class="site-footer">
