@@ -17,13 +17,13 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="container nav">
-      <div class="logo" aria-label="BURNIE"><span class="brand">BURNIE</span></div>
+      <div class="logo" aria-label="BURNIE">BURNIE</div>
       <div class="nav-actions">
         <a href="index-es.html" class="nav-link">Inicio</a>
         <a href="privacy.html" class="lang-pill" aria-label="Selector de idioma">
@@ -38,7 +38,7 @@
   <main class="policy">
     <div class="container content">
       <h1>Política de Privacidad de <span class="brand">BURNIE</span></h1>
-      <p class="last-updated"><strong>Última actualización:</strong> 28 de enero de 2026</p>
+      <p class="last-updated"><strong>Última actualización:</strong> 30 de septiembre de 2026</p>
 
       <h2>Introducción</h2>
       <p><span class="brand">BURNIE</span> ("nosotros", "nuestro" o "nos") está comprometido con la protección de tu privacidad. Esta Política de Privacidad explica cómo nuestra aplicación de seguimiento de ejercicio maneja tu información.</p>
@@ -47,9 +47,11 @@
 
       <h3>Datos que Proporcionas</h3>
       <ul>
-        <li><strong>Registros de Ejercicio:</strong> Los entrenamientos que registras (tipo, duración, fecha)</li>
-        <li><strong>Preferencias de Notificación:</strong> La hora que eliges para recordatorios diarios</li>
-        <li><strong>Configuración de la Aplicación:</strong> Tus preferencias dentro de la aplicación</li>
+        <li><strong>Registros de Ejercicio:</strong> Los entrenamientos que registras (tipo, duración, fecha, íconos emoji personalizados)</li>
+        <li><strong>Datos de Calorías:</strong> Calculadas automáticamente basándose en el tipo de entrenamiento y duración usando valores MET estándar</li>
+        <li><strong>Metas Semanales:</strong> Tu número elegido de días activos por semana (3-7 días)</li>
+        <li><strong>Preferencias de Notificación:</strong> Los días y horarios que eliges para recordatorios de entrenamiento</li>
+        <li><strong>Configuración de la Aplicación:</strong> Tus preferencias dentro de la aplicación (idioma, apariencia, etc.)</li>
       </ul>
 
       <h3>Datos Recopilados Automáticamente</h3>
@@ -78,10 +80,37 @@
 
       <h3>Notificaciones</h3>
       <ul>
-        <li><strong>Propósito:</strong> Para enviarte recordatorios diarios a la hora que elijas (<span class="brand">BURNIE</span> regañándote)</li>
+        <li><strong>Propósito:</strong> Para enviarte recordatorios de entrenamiento en los días y horarios que elijas (<span class="brand">BURNIE</span> manteniéndote responsable)</li>
         <li><strong>Control:</strong> Puedes otorgar o denegar este permiso en la Configuración de iOS</li>
         <li><strong>Datos:</strong> El contenido de las notificaciones (mensajes de <span class="brand">BURNIE</span>) se genera localmente en tu dispositivo</li>
-        <li><strong>Horario:</strong> Tú eliges cuándo <span class="brand">BURNIE</span> te recuerda; nosotros no lo decidimos</li>
+        <li><strong>Horario:</strong> Tú eliges qué días de la semana y a qué hora <span class="brand">BURNIE</span> te recuerda</li>
+      </ul>
+
+      <h3>Apple Health (HealthKit) - Opcional</h3>
+      <p><strong>Este permiso es completamente opcional.</strong> <span class="brand">BURNIE</span> funciona perfectamente sin él.</p>
+
+      <h4>Si Activas la Sincronización con Apple Health:</h4>
+
+      <p><strong>Lo que Leemos de Apple Health:</strong></p>
+      <ul>
+        <li><strong>Entrenamientos:</strong> Entrenamientos de tu Apple Watch u otras apps de fitness (importados para contar hacia tu meta semanal)</li>
+        <li><strong>Pasos:</strong> Tu conteo diario de pasos desde iPhone o Apple Watch (mostrado en la app)</li>
+        <li><strong>Peso Corporal:</strong> Tu peso para calcular estimaciones de calorías más precisas (opcional, usa 70kg por defecto si no está disponible)</li>
+      </ul>
+
+      <p><strong>Lo que Escribimos en Apple Health:</strong></p>
+      <ul>
+        <li><strong>Tus Entrenamientos:</strong> Los entrenamientos que registras en <span class="brand">BURNIE</span> se guardan en Apple Health (incluyendo tipo, duración, calorías)</li>
+        <li><strong>Actualizaciones y Eliminaciones:</strong> Si editas o eliminas un entrenamiento en <span class="brand">BURNIE</span>, el cambio se sincroniza con Apple Health</li>
+      </ul>
+
+      <p><strong>Notas Importantes:</strong></p>
+      <ul>
+        <li>Todos los datos permanecen dentro del <strong>ecosistema de Apple</strong> (tu dispositivo ↔ Apple Health solamente)</li>
+        <li><strong>Nunca</strong> enviamos tus datos de salud a nuestros servidores o terceros</li>
+        <li>Controlas el interruptor de sincronización en los ajustes de la app (actívalo/desactívalo en cualquier momento)</li>
+        <li>Puedes revocar el acceso a Health en cualquier momento en Configuración de iOS → Salud → Acceso a Datos y Dispositivos</li>
+        <li>La detección de duplicados previene el doble conteo de entrenamientos importados</li>
       </ul>
 
       <h3>No se Requieren Otros Permisos</h3>
@@ -92,7 +121,6 @@
         <li>Tu cámara o fotos</li>
         <li>Tu micrófono</li>
         <li>Tu calendario</li>
-        <li>Tus datos de salud (HealthKit)</li>
         <li>Ninguna otra función del dispositivo</li>
       </ul>
 
@@ -116,7 +144,8 @@
 
       <h2>Exportación de Datos</h2>
       <ul>
-        <li>Puedes exportar tu historial de entrenamientos como archivos Markdown (.md)</li>
+        <li>Puedes exportar tu historial completo de entrenamientos como archivos Markdown (.md)</li>
+        <li>Las exportaciones incluyen: tipo de entrenamiento, duración, fecha, calorías quemadas y cualquier ícono emoji personalizado</li>
         <li>Los archivos exportados son legibles en apps como Notion, Obsidian o cualquier editor de texto</li>
         <li>Las exportaciones se generan en el dispositivo y se guardan en tu app Archivos</li>
         <li>Tú controlas dónde se guardan los archivos exportados y quién puede acceder a ellos</li>
@@ -159,7 +188,7 @@
 
       <h2>Contáctanos</h2>
       <p>Si tienes preguntas sobre esta Política de Privacidad o sobre cómo <span class="brand">BURNIE</span> maneja tus datos, contáctanos en:</p>
-      <p><strong>Email:</strong> <a href="mailto:hola@burnapp.fitness">hola@burnapp.fitness</a></p>
+      <p><strong>Email:</strong> <a href="mailto:burnielife@gmail.com">burnielife@gmail.com</a></p>
 
       <h2>Cumplimiento</h2>
       <p>Esta aplicación cumple con:</p>
@@ -176,16 +205,19 @@
           <li>No recopilamos tus datos</li>
           <li>Todo permanece en tu dispositivo</li>
           <li>Las notificaciones se programan localmente (sin rastreo de servidor)</li>
+          <li>La sincronización con Apple Health es <strong>opcional</strong> y permanece dentro del ecosistema de Apple</li>
+          <li>Los datos de salud nunca salen del sistema de Apple (dispositivo ↔ HealthKit solamente)</li>
+          <li>Calorías calculadas en el dispositivo usando fórmulas MET estándar</li>
           <li>Sin APIs de IA ni servicios externos</li>
           <li>Sin análisis, sin anuncios, sin rastreo</li>
           <li>Eliminar la aplicación = eliminar tus datos</li>
-          <li>No podemos ver tus entrenamientos o rachas</li>
+          <li>No podemos ver tus entrenamientos, metas semanales o pasos</li>
           <li>El sarcasmo de <span class="brand">BURNIE</span> es 100% offline</li>
         </ul>
       </div>
 
       <hr style="margin: 48px 0; border: none; border-top: 1px solid #e5e5e5;">
-      <p><em>Esta política de privacidad es efectiva a partir del 28 de enero de 2026 y se aplica a todos los usuarios de <span class="brand">BURNIE</span>.</em></p>
+      <p><em>Esta política de privacidad es efectiva a partir del 30 de septiembre de 2026 y se aplica a todos los usuarios de <span class="brand">BURNIE</span>.</em></p>
     </div>
   </main>
 

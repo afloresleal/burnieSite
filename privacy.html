@@ -17,13 +17,13 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="container nav">
-      <div class="logo" aria-label="BURNIE"><span class="brand">BURNIE</span></div>
+      <div class="logo" aria-label="BURNIE">BURNIE</div>
       <div class="nav-actions">
         <a href="index.html" class="nav-link">Home</a>
         <a href="privacidad.html" class="lang-pill" aria-label="Language toggle">
@@ -38,7 +38,7 @@
   <main class="policy">
     <div class="container content">
       <h1>Privacy Policy for <span class="brand">BURNIE</span></h1>
-      <p class="last-updated"><strong>Last Updated:</strong> January 28, 2026</p>
+      <p class="last-updated"><strong>Last Updated:</strong> September 30, 2026</p>
 
       <h2>Introduction</h2>
       <p><span class="brand">BURNIE</span> ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our fitness tracking application handles your information.</p>
@@ -47,9 +47,11 @@
 
       <h3>Data You Provide</h3>
       <ul>
-        <li><strong>Workout Records:</strong> The workouts you log (type, duration, date)</li>
-        <li><strong>Notification Preferences:</strong> The time you choose for daily reminders</li>
-        <li><strong>App Settings:</strong> Your preferences within the app</li>
+        <li><strong>Workout Records:</strong> The workouts you log (type, duration, date, custom emoji icons)</li>
+        <li><strong>Calorie Data:</strong> Automatically calculated based on workout type and duration using standard MET values</li>
+        <li><strong>Weekly Goals:</strong> Your chosen number of active days per week (3-7 days)</li>
+        <li><strong>Notification Preferences:</strong> The days and times you choose for workout reminders</li>
+        <li><strong>App Settings:</strong> Your preferences within the app (language, appearance, etc.)</li>
       </ul>
 
       <h3>Automatically Collected Data</h3>
@@ -78,10 +80,37 @@
 
       <h3>Notifications</h3>
       <ul>
-        <li><strong>Purpose:</strong> To send you daily reminders at your chosen time (<span class="brand">BURNIE</span> calling you out)</li>
+        <li><strong>Purpose:</strong> To send you workout reminders on your chosen days and times (<span class="brand">BURNIE</span> keeping you accountable)</li>
         <li><strong>Control:</strong> You can grant or deny this permission in iOS Settings</li>
         <li><strong>Data:</strong> Notification content (<span class="brand">BURNIE</span>'s messages) is generated locally on your device</li>
-        <li><strong>Timing:</strong> You choose when <span class="brand">BURNIE</span> reminds you; we don't decide for you</li>
+        <li><strong>Schedule:</strong> You choose which days of the week and what time <span class="brand">BURNIE</span> reminds you</li>
+      </ul>
+
+      <h3>Apple Health (HealthKit) - Optional</h3>
+      <p><strong>This permission is completely optional.</strong> <span class="brand">BURNIE</span> works perfectly without it.</p>
+
+      <h4>If You Enable Apple Health Sync:</h4>
+
+      <p><strong>What We Read from Apple Health:</strong></p>
+      <ul>
+        <li><strong>Workouts:</strong> Workouts from your Apple Watch or other fitness apps (imported to count toward your weekly goal)</li>
+        <li><strong>Steps:</strong> Your daily step count from iPhone or Apple Watch (displayed in the app)</li>
+        <li><strong>Body Weight:</strong> Your weight to calculate more accurate calorie estimates (optional, uses 70kg default if not available)</li>
+      </ul>
+
+      <p><strong>What We Write to Apple Health:</strong></p>
+      <ul>
+        <li><strong>Your Workouts:</strong> Workouts you log in <span class="brand">BURNIE</span> are saved to Apple Health (including type, duration, calories)</li>
+        <li><strong>Updates & Deletions:</strong> If you edit or delete a workout in <span class="brand">BURNIE</span>, the change syncs to Apple Health</li>
+      </ul>
+
+      <p><strong>Important Notes:</strong></p>
+      <ul>
+        <li>All data stays within the <strong>Apple ecosystem</strong> (your device ↔ Apple Health only)</li>
+        <li>We <strong>never</strong> send your health data to our servers or third parties</li>
+        <li>You control the sync toggle in app settings (turn it on/off anytime)</li>
+        <li>You can revoke Health access anytime in iOS Settings → Health → Data Access & Devices</li>
+        <li>Duplicate detection prevents double-counting imported workouts</li>
       </ul>
 
       <h3>No Other Permissions Required</h3>
@@ -92,7 +121,6 @@
         <li>Your camera or photos</li>
         <li>Your microphone</li>
         <li>Your calendar</li>
-        <li>Your health data (HealthKit)</li>
         <li>Any other device features</li>
       </ul>
 
@@ -116,7 +144,8 @@
 
       <h2>Data Export</h2>
       <ul>
-        <li>You can export your workout history as Markdown (.md) files</li>
+        <li>You can export your complete workout history as Markdown (.md) files</li>
+        <li>Exports include: workout type, duration, date, calories burned, and any custom emoji icons</li>
         <li>Exported files are readable in apps like Notion, Obsidian, or any text editor</li>
         <li>Exports are generated on-device and saved to your Files app</li>
         <li>You control where exported files are saved and who can access them</li>
@@ -159,7 +188,7 @@
 
       <h2>Contact Us</h2>
       <p>If you have questions about this Privacy Policy or how <span class="brand">BURNIE</span> handles your data, please contact us at:</p>
-      <p><strong>Email:</strong> <a href="mailto:hello@burnapp.fitness">hello@burnapp.fitness</a></p>
+      <p><strong>Email:</strong> <a href="mailto:burnielife@gmail.com">burnielife@gmail.com</a></p>
 
       <h2>Compliance</h2>
       <p>This app complies with:</p>
@@ -176,16 +205,19 @@
           <li>We don't collect your data</li>
           <li>Everything stays on your device</li>
           <li>Notifications are scheduled locally (no server tracking)</li>
+          <li>Apple Health sync is <strong>optional</strong> and stays within the Apple ecosystem</li>
+          <li>Health data never leaves Apple's system (device ↔ HealthKit only)</li>
+          <li>Calories calculated on-device using standard MET formulas</li>
           <li>No AI APIs or external services</li>
           <li>No analytics, no ads, no tracking</li>
           <li>Delete the app = delete your data</li>
-          <li>We can't see your workouts or streaks</li>
+          <li>We can't see your workouts, weekly goals, or steps</li>
           <li><span class="brand">BURNIE</span>'s sass is 100% offline</li>
         </ul>
       </div>
 
       <hr style="margin: 48px 0; border: none; border-top: 1px solid #e5e5e5;">
-      <p><em>This privacy policy is effective as of January 28, 2026, and applies to all users of <span class="brand">BURNIE</span>.</em></p>
+      <p><em>This privacy policy is effective as of September 30, 2026, and applies to all users of <span class="brand">BURNIE</span>.</em></p>
     </div>
   </main>
 
